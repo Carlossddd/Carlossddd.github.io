@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fanpage One Piece</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <header>
+        <h1>One Piece Fanpage</h1>
+        <nav>
+            <ul>
+                <li><a href="#portada">Portada</a></li>
+                <li><a href="#sinopsis">Sinopsis</a></li>
+                <li><a href="#personajes">Personajes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="portada" class="portada">
+        <h2>Bienvenidos al mundo de One Piece</h2>
+        <img src="https://i.imgur.com/8Qq7Z4V.jpg" alt="One Piece Portada" />
+    </section>
+
+    <section id="sinopsis" class="sinopsis">
+        <h2>Sinopsis</h2>
+        <p>
+            One Piece cuenta la historia de Monkey D. Luffy, un joven pirata que sueña con encontrar el legendario tesoro conocido como "One Piece" y convertirse en el Rey de los Piratas. Junto a su tripulación, los Sombrero de Paja, vive aventuras increíbles, enfrenta enemigos poderosos y descubre nuevos mares llenos de misterios.
+        </p>
+    </section>
+
+    <section id="personajes" class="personajes">
+        <h2>Personajes Principales</h2>
+        <div class="lista-personajes">
+            <article>
+                <h3>Monkey D. Luffy</h3>
+                <img src="https://i.imgur.com/1Q9Z1gF.png" alt="Luffy" />
+                <p>Capitán de los Sombrero de Paja. Usuario de la Gomu Gomu no Mi.</p>
+            </article>
+            <article>
+                <h3>Roronoa Zoro</h3>
+                <img src="https://i.imgur.com/Wi8mQ1M.png" alt="Zoro" />
+                <p>Espadachín del grupo, experto en Santoryu (estilo de tres espadas).</p>
+            </article>
+            <article>
+                <h3>Nami</h3>
+                <img src="https://i.imgur.com/0oLyCto.png" alt="Nami" />
+                <p>Navegante de la tripulación, especialista en cartografía y clima.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" required></textarea>
+
+            <button type="button" onclick="enviarMensaje()">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Fanpage One Piece | Proyecto GitHub</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
