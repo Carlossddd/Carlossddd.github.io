@@ -1,72 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fanpage One Piece</title>
+    <title>One Piece Fanpage</title>
     <link rel="stylesheet" href="index.css" />
 </head>
 <body>
+
     <header>
+        <img src="img/onepiece-logo.png" alt="One Piece Logo" class="logo">
         <h1>One Piece Fanpage</h1>
-        <nav>
-            <ul>
-                <li><a href="#portada">Portada</a></li>
-                <li><a href="#sinopsis">Sinopsis</a></li>
-                <li><a href="#personajes">Personajes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id="portada" class="portada">
-        <h2>Bienvenidos al mundo de One Piece</h2>
-        <img src="https://i.imgur.com/8Qq7Z4V.jpg" alt="One Piece Portada" />
+    <section class="hero">
+        <h2>Welcome to the Grand Line! 🌊☠️</h2>
+        <p>Explore your favorite characters from the Straw Hat Crew.</p>
     </section>
 
-    <section id="sinopsis" class="sinopsis">
-        <h2>Sinopsis</h2>
-        <p>
-            One Piece cuenta la historia de Monkey D. Luffy, un joven pirata que sueña con encontrar el legendario tesoro conocido como "One Piece" y convertirse en el Rey de los Piratas. Junto a su tripulación, los Sombrero de Paja, vive aventuras increíbles, enfrenta enemigos poderosos y descubre nuevos mares llenos de misterios.
-        </p>
-    </section>
+    <section class="characters">
+        <h2>Characters</h2>
 
-    <section id="personajes" class="personajes">
-        <h2>Personajes Principales</h2>
-        <div class="lista-personajes">
-            <article>
-                <h3>Monkey D. Luffy</h3>
-                <img src="https://i.imgur.com/1Q9Z1gF.png" alt="Luffy" />
-                <p>Capitán de los Sombrero de Paja. Usuario de la Gomu Gomu no Mi.</p>
-            </article>
-            <article>
-                <h3>Roronoa Zoro</h3>
-                <img src="https://i.imgur.com/Wi8mQ1M.png" alt="Zoro" />
-                <p>Espadachín del grupo, experto en Santoryu (estilo de tres espadas).</p>
-            </article>
-            <article>
-                <h3>Nami</h3>
-                <img src="https://i.imgur.com/0oLyCto.png" alt="Nami" />
-                <p>Navegante de la tripulación, especialista en cartografía y clima.</p>
-            </article>
+        <div class="card">
+            <img src="img/luffy.jpg" alt="Luffy">
+            <h3>Monkey D. Luffy</h3>
+            <p>Captain of the Straw Hat Pirates, user of the Gomu Gomu no Mi.</p>
+        </div>
+
+        <div class="card">
+            <img src="img/zoro.jpg" alt="Zoro">
+            <h3>Roronoa Zoro</h3>
+            <p>The swordsman of the crew, known for his Three-Sword Style.</p>
+        </div>
+
+        <div class="card">
+            <img src="img/nami.jpg" alt="Nami">
+            <h3>Nami</h3>
+            <p>The navigator of the crew, skilled with the Clima-Tact.</p>
         </div>
     </section>
 
-    <section id="contacto" class="contacto">
-        <h2>Contacto</h2>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required />
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" required></textarea>
-
-            <button type="button" onclick="enviarMensaje()">Enviar</button>
-        </form>
-    </section>
-
     <footer>
-        <p>© 2025 Fanpage One Piece | Proyecto GitHub</p>
+        <p>Fanpage made by Carlos – Not official One Piece website.</p>
     </footer>
 
     <script src="index.js"></script>
