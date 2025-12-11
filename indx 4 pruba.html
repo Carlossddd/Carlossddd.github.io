@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Line - One Piece Fanpage</title>
+    
+    <!-- Librería Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Vinculación a nuestro archivo de estilos CSS separado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-900">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="sticky top-0 z-50 w-full shadow-2xl wood-texture">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl animate-bounce">☠️</span>
+                <h1 class="font-pirate text-2xl md:text-3xl text-yellow-400 tracking-wider" style="text-shadow: 2px 2px 0px #000;">ONE PIECE</h1>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#historia" class="text-white hover:text-yellow-400 font-bold font-wanted text-xl transition-colors tracking-wide">HISTORIA</a>
+                <a href="#personajes" class="text-white hover:text-yellow-400 font-bold font-wanted text-xl transition-colors tracking-wide">NAKAMAS</a>
+                <a href="#merch" class="text-white hover:text-yellow-400 font-bold font-wanted text-xl transition-colors tracking-wide">TESOROS</a>
+                <a href="#autor" class="text-white hover:text-yellow-400 font-bold font-wanted text-xl transition-colors tracking-wide">AUTOR</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-white text-3xl">☰</button>
+        </div>
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 bg-opacity-95 border-t border-yellow-600">
+            <a href="#historia" class="block text-center text-white p-4 hover:bg-gray-800 font-wanted text-xl border-b border-gray-700">HISTORIA</a>
+            <a href="#personajes" class="block text-center text-white p-4 hover:bg-gray-800 font-wanted text-xl border-b border-gray-700">NAKAMAS</a>
+            <a href="#merch" class="block text-center text-white p-4 hover:bg-gray-800 font-wanted text-xl border-b border-gray-700">TESOROS</a>
+            <a href="#autor" class="block text-center text-white p-4 hover:bg-gray-800 font-wanted text-xl">AUTOR</a>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container mx-auto p-4 md:p-8 space-y-16">
+
+        <!-- SECCIÓN 1: HISTORIA (HERO) -->
+        <section id="historia" class="pergamino rounded p-8 mt-8 transform rotate-1">
+            <div class="text-center mb-8">
+                <img src="img/logo.png" alt="Logo de One Piece" class="mx-auto mb-6 w-64 md:w-96 drop-shadow-lg hover:scale-105 transition-transform">
+                <h2 class="font-pirate text-4xl md:text-6xl text-red-700 mb-4" style="text-shadow: 1px 1px 0px #000;">"¡SERÉ EL REY DE LOS PIRATAS!"</h2>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-8 items-center">
+                <div class="lg:w-2/3">
+                    <h3 class="font-wanted text-3xl border-b-2 border-yellow-700 pb-2 mb-4 inline-block">El Comienzo de la Leyenda</h3>
+                    <p class="text-lg md:text-xl leading-relaxed font-serif text-justify">
+                        En un mundo cubierto por océanos, la ejecución pública de <strong>Gol D. Roger</strong>, el Rey de los Piratas, desata la "Gran Era de la Piratería". Sus últimas palabras revelaron la existencia del tesoro más grande del mundo: el <strong>One Piece</strong>. 
+                        <br><br>
+                        Años después, un joven llamado <strong>Monkey D. Luffy</strong>, con poderes de goma, zarpa del East Blue con un solo sueño: encontrar el tesoro y convertirse en el hombre más libre de los mares.
+                    </p>
+                </div>
+                <div class="lg:w-1/3 p-4 bg-white shadow-lg rotate-2 border-8 border-white">
+                    <img src="img/one piece.jpg" alt="Mugiwara Store" class="w-full h-auto grayscale hover:grayscale-0 transition-all">
+                    <p class="text-center font-wanted text-gray-500 mt-2">La Gran Flota</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: PERSONAJES (WANTED POSTERS) -->
+        <section id="personajes">
+            <h2 class="font-pirate text-5xl text-center text-white mb-2" style="text-shadow: 3px 3px 0px #000;">Los Mugiwaras</h2>
+            <p class="text-center text-yellow-200 text-xl font-wanted mb-10">¡Se buscan! Haz clic para ver detalles</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8 px-2">
+                <!-- El contenido se genera con JS abajo -->
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: MERCHANDISING -->
+        <section id="merch" class="pergamino rounded p-8">
+            <h2 class="font-pirate text-4xl text-center border-b-4 border-double border-yellow-700 pb-4 mb-8">Tesorería de Nami</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Item 1: Sombrero -->
+                <div class="bg-white p-4 shadow-xl border border-gray-200 transform hover:-translate-y-2 transition-transform">
+                    <div class="relative">
+                        <img src="img/gorro.webp" alt="Sombrero" class="w-full h-64 object-cover mb-4">
+                        <span class="absolute top-2 right-2 bg-red-600 text-white font-bold px-3 py-1 rounded-full">-20%</span>
+                    </div>
+                    <h3 class="font-pirate text-2xl mb-1">Sombrero de Paja</h3>
+                    <p class="text-gray-600 italic mb-3">Réplica auténtica tejida a mano.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-xl text-yellow-700">฿ 2,500</span>
+                        <button class="bg-green-600 text-white px-4 py-2 font-bold hover:bg-green-700 rounded transition-colors">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Item 2: Figura -->
+                <div class="bg-white p-4 shadow-xl border border-gray-200 transform hover:-translate-y-2 transition-transform">
+                    <img src="img/figura.webp" alt="Figura" class="w-full h-64 object-cover mb-4 object-top">
+                    <h3 class="font-pirate text-2xl mb-1">Figura Coleccionable</h3>
+                    <p class="text-gray-600 italic mb-3">Edición Limitada Mugiwara Store.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-xl text-yellow-700">฿ 50,000</span>
+                        <button class="bg-green-600 text-white px-4 py-2 font-bold hover:bg-green-700 rounded transition-colors">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Item 3: Fruta -->
+                <div class="bg-white p-4 shadow-xl border border-gray-200 transform hover:-translate-y-2 transition-transform">
+                    <img src="img/gomu.webp" alt="Fruta" class="w-full h-64 object-cover mb-4">
+                    <h3 class="font-pirate text-2xl mb-1">Fruta Gomu Gomu</h3>
+                    <p class="text-gray-600 italic mb-3">Sabor horrible garantizado.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-xl text-yellow-700">฿ 500M</span>
+                        <button class="bg-green-600 text-white px-4 py-2 font-bold hover:bg-green-700 rounded transition-colors">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: AUTOR -->
+        <section id="autor" class="pergamino rounded p-8 mb-12">
+            <div class="border-4 border-dashed border-gray-400 p-6">
+                <h2 class="font-pirate text-4xl text-center mb-8">El Genio: Eiichiro Oda</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="relative group">
+                        <img src="img/ODA.webp" alt="Oda" class="rounded-full border-8 border-white shadow-2xl w-48 h-48 md:w-64 md:h-64 object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-xl font-serif leading-loose text-justify">
+                            <span class="text-5xl float-left mr-2 font-pirate text-red-800">E</span>iichiro Oda (nacido el 1 de enero de 1975) es el legendario mangaka creador de One Piece. Conocido por su ética de trabajo incansable.
+                        </p>
+                        <blockquote class="mt-4 border-l-4 border-red-800 pl-4 italic text-gray-700 font-bold">
+                            "Si quieres dibujar manga, no necesitas ir a la escuela de arte. Solo dibuja."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="wood-texture text-yellow-100 p-8 mt-12 text-center border-t-8 border-yellow-600">
+        <p class="font-pirate text-2xl mb-2">TO BE CONTINUED...</p>
+        <p class="text-sm opacity-70">Fanpage con fines educativos. One Piece © Eiichiro Oda / Shueisha, Toei Animation.</p>
+    </footer>
+
+<!-- MODAL (VISTA DE PERSONAJE EXPANDIDA) -->
+<div id="character-modal" class="hidden fixed inset-0 z-[100] bg-black bg-opacity-90 backdrop-blur-md p-4 flex items-center justify-center transition-opacity duration-300">
+    <div class="pergamino w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded shadow-2xl relative animate-bounce-in text-white">
+        <button id="modal-close-btn" class="absolute top-2 right-4 text-4xl text-red-400 hover:text-red-200 font-bold">&times;</button>
+        
+        <div class="flex flex-col md:flex-row p-6 md:p-10 gap-8">
+            <div class="w-full md:w-5/12 flex-shrink-0">
+                <div class="wanted-poster transform rotate-[-2deg]">
+                    <div class="wanted-header text-white">WANTED</div>
+                    <div class="wanted-sub text-gray-300">DEAD OR ALIVE</div>
+                    <img id="modal-img" src="" class="w-full h-auto object-cover border-2 border-gray-300 grayscale sepia hover:grayscale-0 hover:sepia-0 transition-all duration-500" alt="Personaje">
+                    <div class="mt-2 text-center">
+                        <h2 id="modal-name-poster" class="font-pirate text-2xl uppercase tracking-widest text-white truncate"></h2>
+                        <p id="modal-bounty-poster" class="font-wanted text-xl md:text-2xl font-bold text-yellow-300 mt-1"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-7/12 flex flex-col justify-center">
+                <h2 id="modal-name" class="font-pirate text-4xl md:text-5xl text-yellow-300 mb-2"></h2>
+                <h3 id="modal-role" class="font-wanted text-2xl text-gray-200 mb-6 italic"></h3>
+
+                <p id="modal-desc" class="text-lg leading-relaxed mb-6 font-serif border-l-4 border-yellow-400 pl-4 text-gray-100"></p>
+
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="bg-white bg-opacity-10 p-3 rounded border border-yellow-600">
+                        <span class="font-bold text-yellow-300 block font-wanted">FRUTA DEL DIABLO / PODER:</span>
+                        <span id="modal-fruit" class="text-lg text-gray-100"></span>
+                    </div>
+
+                    <div class="bg-white bg-opacity-10 p-3 rounded border border-yellow-600">
+                        <span class="font-bold text-yellow-300 block font-wanted">SUEÑO:</span>
+                        <span id="modal-dream" class="text-lg text-gray-100"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        /* Mantengo la función createAvatar por compatibilidad, pero ya no se usa
+           para los personajes principales que tú especificaste. */
+        const createAvatar = (emoji, bgColor) => {
+            return `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' style='background-color:${bgColor}'%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='60'%3E${emoji}%3C/text%3E%3C/svg%3E`;
+        };
+
+        // BLOQUE characterData con las rutas que me pediste (exactas)
+        const characterData = [
+            { id: 'luffy', name: 'Monkey D. Luffy', role: 'Capitán', img: "img/LUFFY S.png", desc: 'El hombre que se convertirá en el Rey de los Piratas. Comedor de la Fruta Hito Hito: Modelo Nika. Su espíritu indomable atrae a aliados y aterroriza a la Marina.', dream: 'Encontrar el One Piece y ser libre.', fruit: 'Hito Hito no Mi (Zoan Mítica - Nika)', bounty: '฿ 3,000,000,000' },
+            { id: 'zoro', name: 'Roronoa Zoro', role: 'Espadachín', img: "img/ZORO.webp", desc: 'Maestro del estilo de tres espadas (Santoryu). Aspira a superar a Dracule Mihawk. Posee una lealtad absoluta hacia su capitán.', dream: 'Ser el mejor espadachín del mundo.', fruit: 'Ninguna (Haki Avanzado)', bounty: '฿ 1,111,000,000' },
+            { id: 'nami', name: 'Nami', role: 'Navegante', img: "img/Nami png.png", desc: 'La navegante capaz de predecir ciclones con su cuerpo. Lucha usando el clima con su bastón Clima-Tact creado por Usopp.', dream: 'Dibujar el mapa del mundo entero.', fruit: 'Ninguna (Arma Climática)', bounty: '฿ 366,000,000' },
+            { id: 'usopp', name: 'Usopp', role: 'Francotirador', img: "img/Usopp.webp", desc: 'Hijo de Yasopp. Mentiroso compulsivo pero francotirador genial. Despertó su Haki de Observación para salvar a su capitán.', dream: 'Ser un valiente guerrero del mar.', fruit: 'Ninguna (Haki Observación)', bounty: '฿ 500,000,000' },
+            { id: 'sanji', name: 'Vinsmoke Sanji', role: 'Cocinero', img: "img/SANJI.webp", desc: 'Príncipe del Germa 66 que renegó de su familia. Un chef que nunca usará sus manos para pelear. Su patada puede destruir edificios.', dream: 'Encontrar el All Blue.', fruit: 'Ninguna (Exoesqueleto Germa)', bounty: '฿ 1,032,000,000' },
+            { id: 'chopper', name: 'Tony Tony Chopper', role: 'Médico', img: "img/choppr san.png", desc: 'Un reno de nariz azul que comió la Fruta Humano-Humano. Un genio médico que puede transformarse en varias formas (Monster Point).', dream: 'Curar todas las enfermedades.', fruit: 'Hito Hito no Mi (Zoan)', bounty: '฿ 1,000' },
+            { id: 'robin', name: 'Nico Robin', role: 'Arqueóloga', img: "img/Nico_Robin.webp", desc: 'La única persona viva capaz de leer los Poneglyphs para encontrar la ruta a Laugh Tale. Sobreviviente del genocidio de Ohara.', dream: 'Descubrir la Historia del Siglo Vacío.', fruit: 'Hana Hana no Mi (Paramecia)', bounty: '฿ 930,000,000' },
+            { id: 'franky', name: 'Franky', role: 'Carpintero', img: "img/Franky_OnePiece.webp", desc: 'Un cyborg alimentado con cola. Construyó el Thousand Sunny con la madera legendaria del Árbol Adam.', dream: 'Que su barco navegue todos los mares.', fruit: 'Ninguna (Tecnología Láser)', bounty: '฿ 394,000,000' },
+            { id: 'brook', name: 'Brook', role: 'Músico', img: "img/Soul_King_Brook.png", desc: 'Un esqueleto viviente. Músico y espadachín que congela con el frío del inframundo. Espera cumplir su promesa a Laboon.', dream: 'Reunirse con Laboon.', fruit: 'Yomi Yomi no Mi (Paramecia)', bounty: '฿ 383,000,000' },
+            { id: 'jinbe', name: 'Jinbe', role: 'Timonel', img: "img/jim.webp", desc: 'Ex-Shichibukai y maestro del Karate Gyojin. Un hombre de honor que sirve de escudo y timonel para el Rey de los Piratas.', dream: 'Igualdad entre Humanos y Gyojin.', fruit: 'Ninguna (Karate Gyojin)', bounty: '฿ 1,100,000,000' }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // SELECTOR del contenedor grid dentro de #personajes
+            const grid = document.querySelector('#personajes .grid');
+            const modal = document.getElementById('character-modal');
+
+            // Generar tarjetas
+            characterData.forEach(char => {
+                const card = document.createElement('div');
+                card.className = 'wanted-poster cursor-pointer group bg-opacity-90 hover:bg-opacity-100';
+                card.innerHTML = `
+                    <div class="wanted-header">WANTED</div>
+                    <div class="wanted-sub">DEAD OR ALIVE</div>
+                    <div class="overflow-hidden border-2 border-gray-800 bg-gray-200 aspect-[4/5] relative">
+                        <img src="${char.img}" alt="${char.name}" class="w-full h-full object-cover filter sepia contrast-125 group-hover:sepia-0 transition-all duration-500">
+                    </div>
+                    <div class="mt-3 text-center">
+                        <h3 class="font-pirate text-xl text-gray-900 uppercase truncate px-1 tracking-wide">${char.name.split(' ')[0]}</h3>
+                        <p class="font-wanted text-lg font-bold text-gray-800 border-t border-gray-400 mt-1 pt-1">${char.bounty}</p>
+                    </div>
+                `;
+                card.addEventListener('click', () => openModal(char));
+                grid.appendChild(card);
+            });
+
+            function openModal(char) {
+                // Pongo la ruta directamente en el modal
+                const modalImg = document.getElementById('modal-img');
+                modalImg.src = char.img;
+                modalImg.alt = char.name;
+
+                document.getElementById('modal-name').textContent = char.name;
+                document.getElementById('modal-name-poster').textContent = char.name; 
+                document.getElementById('modal-role').textContent = char.role;
+                document.getElementById('modal-desc').textContent = char.desc;
+                document.getElementById('modal-dream').textContent = char.dream;
+                document.getElementById('modal-fruit').textContent = char.fruit;
+                document.getElementById('modal-bounty-poster').textContent = char.bounty; 
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+
+            const closeModal = () => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            };
+
+            document.getElementById('modal-close-btn').addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if(e.target === modal) closeModal();
+            });
+
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => menu.classList.add('hidden'));
+            });
+        });
+    </script>
+</body>
+</html>

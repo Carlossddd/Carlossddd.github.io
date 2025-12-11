@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Rye&family=Roboto:wght@400;700&display=swap');
+
+/* --- CONFIGURACIÓN PRINCIPAL --- */
+:root {
+    --paper-color: #f4e4bc;
+    --wood-dark: #3e2723;
+    --wood-light: #5d4037;
+    --ocean-blue: #006994;
+    --gold: #FFD700;
+}
+
+body {
+    /* Fondo con gradiente y mapa parallax */
+    background-color: var(--ocean-blue);
+    background-image: linear-gradient(rgba(0, 105, 148, 0.85), rgba(0, 50, 80, 0.9)), 
+                      url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/World_of_One_Piece.svg/1920px-World_of_One_Piece.svg.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    color: #2c1810;
+}
+
+/* --- FUENTES PERSONALIZADAS --- */
+.font-pirate {
+    font-family: 'Rye', serif;
+}
+
+.font-wanted {
+    font-family: 'IM Fell English SC', serif;
+}
+
+/* --- TEXTURAS Y COMPONENTES --- */
+
+/* Textura de Madera (Navbar y Footer) */
+.wood-texture {
+    background-color: var(--wood-dark);
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(255,255,255,0.05) 50px, rgba(255,255,255,0.05) 53px),
+    linear-gradient(to bottom, #3e2723, #281815);
+    border-bottom: 4px solid var(--gold);
+}
+
+/* Estilo Pergamino (Contenedores) */
+.pergamino {
+    background-color: var(--paper-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+    border: 1px solid #cbb898;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+/* Clavos decorativos en el pergamino */
+.pergamino::before, .pergamino::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #7f8c8d, #2c3e50);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.pergamino::before { left: 10px; }
+.pergamino::after { right: 10px; }
+
+/* --- WANTED POSTERS (CARTELES DE SE BUSCA) --- */
+.wanted-poster {
+    background-color: var(--paper-color);
+    border: 4px solid #3e2723;
+    padding: 12px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.wanted-poster:hover {
+    transform: scale(1.05) rotate(2deg);
+    z-index: 10;
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Marca de agua de calavera */
+.wanted-poster::after {
+    content: '☠';
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+    font-size: 80px;
+    opacity: 0.1;
+    color: #3e2723;
+    pointer-events: none;
+}
+
+.wanted-header {
+    font-family: 'Rye', serif;
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #3e2723;
+    border-bottom: 2px solid #3e2723;
+    margin-bottom: 2px;
+    line-height: 1;
+    padding-bottom: 5px;
+}
+
+.wanted-sub {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Scroll oculto para utilidades */
+.scroll-hidden::-webkit-scrollbar { display: none; }
+.scroll-hidden { -ms-overflow-style: none; scrollbar-width: none; }
